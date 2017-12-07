@@ -1,0 +1,23 @@
+header {
+  @include inverse();
+  background-color: transparent;
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    > a {
+      display: block;
+      background: transparent url('/img/header-logo-151x100-2x.png') no-repeat;
+      background-size: 75px 50px;
+      height: 50px;
+      width: 75px;
+      text-indent: -9999px;
+    }
+  }
+}

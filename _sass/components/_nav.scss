@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+
+  > a {
+    display: inline-block;
+    padding: .5em 1em;
+    text-transform: uppercase;
+    font-weight: $light-weight;
+    letter-spacing: .05em;
+    margin-left: .5em;
+
+    color: $light-color;
+    text-decoration: none;
+    border-radius: 9999px;
+
+    &:hover {
+      color: $light-color;
+      text-decoration: none;
+    }
+    &:visited {
+      color: $light-color;
+    }
+
+    &.active, &:hover {
+      background-color: $primary-color;
+    }
+  }
+}

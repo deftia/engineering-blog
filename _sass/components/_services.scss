@@ -1,0 +1,13 @@
+.services {
+  > .services-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    > .service {
+      width: 33%;
+      @media(max-device-width: $mobile-breakpoint) {
+        width: auto;
+      }
+    }
+  }
+}

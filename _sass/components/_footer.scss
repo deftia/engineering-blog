@@ -1,0 +1,10 @@
+footer {
+  font-size: .8em;
+  background-color: $background-color;
+  color: transparentize($light-color, 0.5);
+  padding: 1em;
+
+  p {
+    text-align: center;
+  }
+}

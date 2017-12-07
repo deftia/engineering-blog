@@ -1,0 +1,44 @@
+.contact {
+  @include inverse();
+  overflow: auto;
+
+  h2 {
+    color: $light-color;
+  }
+
+  .methods {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    > .direct {
+      width: 50%;
+      @media(max-device-width: $mobile-breakpoint) {
+        width: auto;
+      }
+      padding: 0 15px;
+    }
+
+    > .contact-us-form {
+      width: 50%;
+      @media(max-device-width: $mobile-breakpoint) {
+        width: auto;
+      }
+      padding: 0 15px;
+      > .caption {
+        font-style: italic;
+      }
+
+      input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 2px;
+        color: $dark-color;
+
+        &:focus {
+          outline: 2px solid $primary-color;
+        }
+      }
+    }
+  }
+}
